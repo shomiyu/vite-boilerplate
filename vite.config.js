@@ -28,7 +28,9 @@ documents.forEach((document) => {
 // ----------------------------------------------
 export default defineConfig({
   root: dir.src,
+
   publicDir: dir.publicDir,
+
   plugins: [
     viteImagemin({
       gifsicle: {
@@ -58,9 +60,16 @@ export default defineConfig({
       },
     }),
   ],
+
+  server: {
+    port: 3000,
+    open: true,
+  },
+
   build: {
     outDir: dir.outDir,
     emptyOutDir: true,
+    minify: false,
     rollupOptions: {
       input: { ...inputs },
       output: {
