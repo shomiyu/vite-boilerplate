@@ -1,0 +1,53 @@
+@use "@/assets/scss/global" as *;
+
+//============================================
+//  MARGIN UTILITY
+//============================================
+
+$marginLists: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
+
+@each $marginList in $marginLists {
+  .u-mb-sp-#{$marginList} {
+    margin-bottom: #{$marginList}px;
+  }
+
+  .u-mt-sp-#{$marginList} {
+    margin-top: #{$marginList}px;
+  }
+
+  .u-mb-tab-#{$marginList} {
+    @include mq(tab) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-tab-#{$marginList} {
+    @include mq(tab) {
+      margin-top: #{$marginList}px;
+    }
+  }
+
+  .u-mb-lap-#{$marginList} {
+    @include mq(lap) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-lap-#{$marginList} {
+    @include mq(lap) {
+      margin-top: #{$marginList}px;
+    }
+  }
+
+  .u-mb-desk-#{$marginList} {
+    @include mq(desk) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-desk-#{$marginList} {
+    @include mq(desk) {
+      margin-top: #{$marginList}px;
+    }
+  }
+}

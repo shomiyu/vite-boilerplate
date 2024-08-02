@@ -1,0 +1,25 @@
+@use "@/assets/scss/global" as *;
+
+//====================================
+//  Break
+//====================================
+.u-break {
+  &.--sp {
+    // sp改行、tabなし
+    display: inline-block;
+
+    @include mq(tab) {
+      display: none;
+    }
+  }
+
+  &.--tab {
+    // spとtab改行、pcなし
+    @include mq(tab) {
+      display: inline-block;
+    }
+    @include mq(lap) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+//====================================
+//  Writing Mode
+//====================================
+.u-writingMode:not([data-media]) {
+  writing-mode: vertical-rl;
+}

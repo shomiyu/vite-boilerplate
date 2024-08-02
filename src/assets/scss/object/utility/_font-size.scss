@@ -1,0 +1,44 @@
+@use "@/assets/scss/global" as *;
+
+/*
+  文字サイズ調整 ユーティリティ
+  実数値は 16px に対して
+  - xsmall  : 0.75em（12px）
+  - small  : 0.875em（14px）
+  - normal : 1em（16px）
+  - large  : 1.25em（20px）
+  - xlarge  : 1.5em（24px）
+  - 2xlarge  : 2em（32px）
+--------------------------------------------------------- */
+$sizeLists: (
+  "xsmall": 0.75,
+  "small": 0.875,
+  "normal": 1,
+  "large": 1.25,
+  "xlarge": 1.5,
+  "2xlarge": 2,
+);
+
+@each $key, $size in $sizeLists {
+  .u-fz-sp-#{$key} {
+    font-size: #{$size}em;
+  }
+
+  .u-fz-tab-#{$key} {
+    @include mq(tab) {
+      font-size: #{$size}em;
+    }
+  }
+
+  .u-fz-lap-#{$key} {
+    @include mq(lap) {
+      font-size: #{$size}em;
+    }
+  }
+
+  .u-fz-desk-#{$key} {
+    @include mq(desk) {
+      font-size: #{$size}em;
+    }
+  }
+}

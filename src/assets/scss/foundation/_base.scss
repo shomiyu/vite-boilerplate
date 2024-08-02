@@ -1,0 +1,49 @@
+@use "@/assets/scss/global" as *;
+
+/*
+  base
+-----------------------------------------------------*/
+html {
+  box-sizing: border-box;
+  font-family: var(--font--set-primary);
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-main);
+  font-size: fz(16);
+  height: 100%;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}

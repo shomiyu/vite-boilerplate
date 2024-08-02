@@ -1,0 +1,44 @@
+//============================================
+//  SETTINGS
+//============================================
+
+// Breack Points Variables
+// reference :
+// - xxs: 0
+// - xs: 360px
+// - sm: 576px
+// - md: 768px
+// - lg: 992px
+// - xl: 1200px
+// - xxl: 1500px
+//--------------------------------------------
+$breakpoints: (
+  "sp": 480px,
+  "tab": 768px,
+  "lap": 1024px,
+  "desk": 1200px,
+) !default;
+
+:root {
+  // Color
+  //--------------------------------------------
+  --color-text-main: #000;
+  --color-bg-white: #fff;
+
+  // Typeface
+  //--------------------------------------------
+  --font--set-primary: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    sans-serif;
+
+  // Comp Size
+  //--------------------------------------------
+  --comp-size-sp: 390;
+  --comp-size-tab: 768;
+  --comp-size-pc: 1440;
+
+  // Animation
+  //--------------------------------------------
+  --duration: 0.4s;
+  --easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --easing-cut: cubic-bezier(0.8, 0, 0.2, 1);
+}

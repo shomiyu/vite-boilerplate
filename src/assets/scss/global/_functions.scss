@@ -1,0 +1,31 @@
+@use "sass:math";
+
+//============================================
+//  FUNCTIONS
+//============================================
+
+// -------------------------------------------
+//  引数のfontSizeをremに変換する関数
+//  @param fontSize フォントサイズ
+// -------------------------------------------
+@function fz($fontSize) {
+  @return math.div($fontSize, 16) * 1rem;
+}
+
+// -------------------------------------------
+//  引数のfontSizeを元に指定されたpx数をemに変換する関数
+//  @param px 変換するpx数
+//  @param fontSize フォントサイズ
+// -------------------------------------------
+@function em($px, $fontSize: 16) {
+  @return math.div($px, $fontSize) * 1em;
+}
+
+// -------------------------------------------
+// 引数の最大画面サイズから指定されたpx数を元にvwに変換する関数
+// @param maxScreenSize 最大画面サイズ
+// @param px 変換するpx数
+// -------------------------------------------
+@function vw($maxScreenSize, $px) {
+  @return math.div($px, $maxScreenSize) * 100 * 1vw;
+}
