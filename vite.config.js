@@ -69,6 +69,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
+      "@js": resolve(__dirname, "src/assets/js"),
+      "@scss": resolve(__dirname, "src/assets/scss"),
     },
   },
 
