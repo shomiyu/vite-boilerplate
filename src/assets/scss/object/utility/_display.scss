@@ -1,0 +1,28 @@
+@use "@scss/global" as *;
+
+//====================================
+//  DISPLAY
+//====================================
+.u-display {
+  &[data-display~="sp:only"] {
+    display: block;
+
+    @include mq() {
+      display: none;
+    }
+  }
+  &[data-display~="tab:over"] {
+    display: none;
+
+    @include mq() {
+      display: block;
+    }
+  }
+  &[data-display~="lap:over"] {
+    display: none;
+
+    @include mq(lap) {
+      display: block;
+    }
+  }
+}
