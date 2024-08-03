@@ -44,8 +44,15 @@
 <meta name="twitter:card" content="{{site.ogp.type}}" />
 {{/if}} {{#if site.twitter.username}}
 <meta name="twitter:site" content="{{site.twitter.username}}" />
-{{/if}} {{#if site.favicon}}
-<link rel="icon" href="{{site.favicon}}" />
+{{/if}} {{#if site.favicon:svg}}
+<link rel="icon" href="{{site.favicon:svg}}" type="image/svg+xml" />
+{{/if}} {{#if site.favicon:png}}
+<link
+  rel="icon alternate"
+  href="{{site.favicon:png}}"
+  type="image/png"
+  sizes="32x32"
+/>
 {{/if}}
 <link rel="canonical" href="https://{{site.domain}}{{pagePath}}" />
 {{>_webfonts}}

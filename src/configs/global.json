@@ -3,8 +3,8 @@
     "name": "Vite Boilerplate",
     "name_separate": " | ",
     "domain": "example.com",
-    "favicon:png": "/favicon.png",
-    "favicon:svg": "/favicon.svg",
+    "favicon:png": "/images/favicon.png",
+    "favicon:svg": "/images/vite.svg",
     "description": "サイトの説明文が入ります。（120文字以内推奨）",
     "og:description": "サイトの説明文が入ります。（90文字以内推奨）",
     "ogp": {
