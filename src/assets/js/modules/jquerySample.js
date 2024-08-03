@@ -1,5 +1,5 @@
 export const sampleFunction = () => {
   $(function () {
-    console.log("jQuery is ready!");
+    console.log('jQuery is ready!');
   });
 };

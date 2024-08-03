@@ -1,3 +1,3 @@
-import { sampleFunction } from "@js/modules/jquerySample";
+import { sampleFunction } from '@js/modules/jquerySample';
 
 sampleFunction();

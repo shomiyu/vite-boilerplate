@@ -54,6 +54,7 @@ export default defineConfig({
       jQuery: 'jquery',
     }),
     handlebars({
+      partialDirectory: [resolve(__dirname, 'src/includes')],
       context: async (pagePath) => {
         configs.global = await readConfigJSONFile('./src/configs/global.json');
         configs.meta = await readConfigJSONFile('./src/configs/meta.json');
@@ -114,7 +115,7 @@ export default defineConfig({
   build: {
     outDir: dir.outDir,
     emptyOutDir: true,
-    minify: false,
+    minify: true,
     rollupOptions: {
       input: { ...inputs },
       output: {
