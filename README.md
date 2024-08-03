@@ -141,3 +141,13 @@ sampleFunction();
 パブリックフォルダに格納  
 1. `/public/images` に画像を格納します。
 2. `/images/{FILE_NAME}` で出力します。
+
+## 参考
+
+この開発環境を作るのに大きく影響を受けたリポジトリ及びサイトたちです。  
+ありがとうございました！
+
+- [Viteで開発環境構築〜Pug・Sass・JS〜](https://yuito-blog.com/vite-develop/)
+- [vite-plugin-handlebarsでよく使う構文](https://zenn.dev/tamon_kondo/articles/e6aceb1ea15f4b)
+- [Vite で Handlebars を 使用してHTMLファイルにデータを流し込む](https://www.4peace.co.jp/blog_tech/1513/)
+- [masa5714 / vite-boilerplate](https://github.com/masa5714/vite-boilerplate)
