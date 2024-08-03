@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import globule from "globule";
 import viteImagemin from "vite-plugin-imagemin";
+import inject from "@rollup/plugin-inject";
 
 // ディレクトリ
 const dir = {
@@ -32,6 +33,10 @@ export default defineConfig({
   publicDir: dir.publicDir,
 
   plugins: [
+    inject({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
