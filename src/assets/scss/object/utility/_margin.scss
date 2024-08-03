@@ -4,50 +4,21 @@
 //  MARGIN UTILITY
 //============================================
 
-$marginLists: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
+// ex. class="u-margin" data-margin-top="sp:10"
+//--------------------------------------------
+$marginList: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
 
-@each $marginList in $marginLists {
-  .u-mb-sp-#{$marginList} {
-    margin-bottom: #{$marginList}px;
-  }
-
-  .u-mt-sp-#{$marginList} {
-    margin-top: #{$marginList}px;
-  }
-
-  .u-mb-tab-#{$marginList} {
-    @include mq(tab) {
-      margin-bottom: #{$marginList}px;
-    }
-  }
-
-  .u-mt-tab-#{$marginList} {
-    @include mq(tab) {
-      margin-top: #{$marginList}px;
-    }
-  }
-
-  .u-mb-lap-#{$marginList} {
-    @include mq(lap) {
-      margin-bottom: #{$marginList}px;
-    }
-  }
-
-  .u-mt-lap-#{$marginList} {
-    @include mq(lap) {
-      margin-top: #{$marginList}px;
-    }
-  }
-
-  .u-mb-desk-#{$marginList} {
-    @include mq(desk) {
-      margin-bottom: #{$marginList}px;
-    }
-  }
-
-  .u-mt-desk-#{$marginList} {
-    @include mq(desk) {
-      margin-top: #{$marginList}px;
+.u-margin {
+  @each $device, $breakpoint in $breakpoints {
+    @media screen and (min-width: $breakpoint) {
+      @each $margin in $marginList {
+        &[data-margin-top~="#{$device}:#{$margin}"] {
+          margin-top: #{$margin}px;
+        }
+        &[data-margin-bottom~="#{$device}:#{$margin}"] {
+          margin-bottom: #{$margin}px;
+        }
+      }
     }
   }
 }
