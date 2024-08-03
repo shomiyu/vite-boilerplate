@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-prettier", "stylelint-scss", "stylelint-order"],
+  "ignoreFiles": ["**/node_modules/**", "/**/*.js"],
+  "rules": {
+    "prettier/prettier": [
+      true,
+      {
+        "singleQuote": false,
+        "tabWidth": 2
+      }
+    ],
+    "color-hex-length": "short",
+    "function-url-quotes": "always",
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null
+  }
+}
