@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "サイト名",
+    "name": "Vite Boilerplate",
     "name_separate": " | ",
     "domain": "example.com",
     "favicon:png": "/favicon.png",

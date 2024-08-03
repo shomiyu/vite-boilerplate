@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="/assets/scss/style.scss" />
-    <script type="module" src="/assets/js/main.js"></script>
+    {{>_head}}
   </head>
+
   <body>
-    <header>
-      <h1>テストです</h1>
-      <img src="/assets/images/javascript.svg" alt="" />
-    </header>
+    <div class="l-wrapper">
+      {{>_header}}
+
+      <main class="l-main">{{>_mainContents}}</main>
+
+      {{>_footer}}
+    </div>
   </body>
 </html>

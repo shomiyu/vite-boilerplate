@@ -7,6 +7,7 @@
   "bracketSpacing": true,
   "vueIndentScriptAndStyle": false,
   "singleQuote": true,
+  "htmlWhitespaceSensitivity": "css",
   "overrides": [
     {
       "files": ["**/*.css", "**/*.scss", "**/*.html"],

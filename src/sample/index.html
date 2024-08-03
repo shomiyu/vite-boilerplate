@@ -1,13 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/scss/style.css" />
-    <script type="module" src="/assets/js/main.js"></script>
+    {{>_head}}
   </head>
+
   <body>
-    サンプル
+    <div class="l-wrapper">
+      {{>_header }}
+
+      <main class="l-main">
+        <p>サンプルページ</p>
+      </main>
+
+      {{>_footer}}
+    </div>
   </body>
 </html>
