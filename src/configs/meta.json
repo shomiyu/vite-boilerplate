@@ -1,0 +1,16 @@
+{
+  "/sample/index.html": {
+    "pageTitle": "サンプルページ",
+    "description": "サンプルページの説明文です。",
+    "og:description": "サンプルページの説明文です。（90文字以内推奨）",
+    "ogp": {
+      "type": "website",
+      "image": "/ogp.jpg",
+      "image:alt": "OGP画像のaltが入ります。"
+    },
+    "twitter": {
+      "card": "summary"
+    },
+    "noindex": false
+  }
+}

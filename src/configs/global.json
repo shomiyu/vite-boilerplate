@@ -1,0 +1,21 @@
+{
+  "site": {
+    "name": "サイト名",
+    "name_separate": " | ",
+    "domain": "example.com",
+    "favicon:png": "/favicon.png",
+    "favicon:svg": "/favicon.svg",
+    "description": "サイトの説明文が入ります。（120文字以内推奨）",
+    "og:description": "サイトの説明文が入ります。（90文字以内推奨）",
+    "ogp": {
+      "type": "website",
+      "image": "/ogp.jpg",
+      "image:alt": "OGP画像のaltが入ります。"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "username": "@shomiyu"
+    },
+    "noindex": false
+  }
+}
